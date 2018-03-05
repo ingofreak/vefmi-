@@ -40,4 +40,4 @@ def staticskrar(skra):
 def villa(error):
     return "<h2>Því miður er þessi síða ekki til</h2>"
 
-run(host='localhost', port=8080)
+run(host='0.0.0.0', port=os.environ.get('PORT'))
